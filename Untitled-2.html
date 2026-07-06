@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title></title> 
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            background-image: url('yaya.jpeg'); 
+            background-size: cover; 
+            background-position: center; 
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "top-left top-right"
+                "button button"
+                "bottom-left bottom-right"
+                ". bottom-text";
+            gap: 20px;
+            text-align: center;
+            position: relative; 
+        }
+
+        .box {
+            width: 150px;
+            height: 200px;
+            border: 2px solid white;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .box-top-left {
+            grid-area: top-left;
+        }
+
+        .box-bottom-right {
+            grid-area: bottom-right;
+        }
+
+        .text {
+    color: white;
+    /* Mengubah warna hitam menjadi transparan (hitam 50%) */
+    background-color: rgba(0, 0, 0, 0.5); 
+    /* Memberikan efek blur pada foto di belakang kotak */
+    backdrop-filter: blur(8px); 
+    -webkit-backdrop-filter: blur(8px);
+    /* Memberikan border tipis transparan agar lebih elegan */
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    padding: 20px;
+    border-radius: 15px; /* Sedikit lebih melengkung agar smooth */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: left;
+    width: fit-content;
+    max-width: 100%;
+}
+
+        .text-top-right {
+            grid-area: top-right;
+        }
+
+        .text-bottom-left {
+            grid-area: bottom-left;
+        }
+
+        .text-bottom {
+            grid-area: bottom-text;
+            position: absolute;
+            bottom: 50px; 
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            padding: 10px; 
+            font-size: 12px; 
+            line-height: 1.4;
+            width: fit-content;
+        }
+
+        .button {
+            grid-area: button;
+            padding: 10px 20px;
+            font-size: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            margin: auto;
+        }
+    </style> 
+</head> 
+<body> 
+    <audio autoplay>
+        <source src="MyGirl.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="container"> 
+        <div class="box box-top-left"> 
+            <img src="Adel 1.jpeg" alt="Image 1"> 
+        </div> 
+        <div class="text text-top-right">
+            Haii Adel cantik, cewek baik, perempuan kuat, maaf yaaa aku ndak bisa bisa ngebuat kata aku sayang kamu di kalkulator yang kamu kirim ditiktok itu hehe, aku cuman bisa ngebuat kayak gini,itupun butuh waktu lama,liat tutorial,nyambuk ai heheh tekaje lucuk" akumah, maaf malem ini tadi callnya tiba tiba mati,akupun gatau kenapa maafin aku yaa
+        </div> 
+        <a href="https://line.me/ti/p/sPhR3xv4vX" class="button">BALAS</a>
+        <div class="text text-bottom-left">
+            Aku gatau kamu kenapa kemarin,tapi dari ceritamu kemarin kamu ngerasain kesedihan dari hal hal kecil ya?,yah aku sering ngalamin itu,dan aku bisa ngatasin itu dengan cara inget inget momen kita bersama heheh,jadii aku juga ngebuat codingan ini buat kamu biar gasedii lagi,kamu bisa ngebuat sedihku berhenti,masa aku ndakk, Semoga kita bisa lebih lama lagi bersamanya, kalau perlu sampai menua bersama wkwk, kalau kamu punya masalah bilang ke aku yaa kita lewati masalah kamu bareng" Okeyy adel?
+        </div> 
+        <div class="box box-bottom-right"> 
+            <img src="adel 10.jpeg" alt="Image 2"> 
+        </div> 
+        <div class="text text-bottom">
+           Sesuai permintaanmu Nona
+           Aku Sayang banget sama kamu,Adelia Salma Sabrina
+           i love you so much
+        </div> 
+    </div> 
+</body>
+</html>
